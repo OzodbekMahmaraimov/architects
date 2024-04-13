@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* LIKE STYLES */
+
+/* NEXT-BUTTON, TEXTS, BUTTON, HEADING, MORE-BUTTON  */
+
+/* HEADING */
+.heading {
+    font-size: 64px;
+}
+
+.heading span:first-child {
+    color: #BDBDBD;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+.heading span:last-child {
+    color: #333333;
+    font-weight: 700;
+}
+
+/* NEXT BUTTON */
+.next-btn {
+    border: 1px solid #F2F2F2;
+    color: #333333;
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    background: #ffffff;
+    background: #F9F9F9;
+}
+
+/* NEXT-TEXT */
+.next-text {
+    word-spacing: 10px;
+    color: #BDBDBD;
+    font-size: 1.8rem;
+}
+
+/* MORE BUTTON */
+.more-btn {
+    padding: 1.2rem 2rem;
+    cursor: pointer;
+    border: 0;
+    letter-spacing: 1px;
+    background-color: #ffffff;
+}
+
+/* NAVBAR */
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.main__header {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2rem 0;
+    text-transform: uppercase;
+}
+
+.main__header .toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.main__logo i {
+    font-size: 1.5rem;
+}
+
+.main__nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: #333333;
+}
+
+.main__nav-item {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.h-0 {
+    height: 0;
+}
+
+/* HOME */
+.main__home {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 600px;
+}
+
+.main__home-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    row-gap: 5rem;
+}
+
+.main__home-img {
+    position: relative;
+}
+
+.main__home-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main__home-img button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* TABS */
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* RESPONSIVE WEB DESIGN */
+@media (max-width: 1200px) {
+
+    /* HOME */
+    .main__home {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 940px) {
+
+    /* NAVBAR */
+    .main__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .main__header .toggle {
+        display: block;
+    }
+
+    .main__nav {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .main__nav-list {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .h-screen {
+        height: 100vh;
+    }
+
+    .main__nav-item {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* HOME */
+    .main__home {
+        margin-top: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+}
