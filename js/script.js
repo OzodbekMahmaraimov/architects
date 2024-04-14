@@ -128,4 +128,12 @@ window.addEventListener('DOMContentLoaded', function () {
             plusSlides(-1)
         })
     }
+
+    // LOADING
+    const loader = document.querySelector(".loader-container");
+
+    setTimeout(() => {
+        loader.classList.remove("flex");
+        loader.classList.add("hide");
+    }, 3000)
 });

@@ -1,97 +1,230 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS FILE -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- BOOTSTRAP ICON -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <title>Archites web site</title>
-</head>
+  </head>
 
-<body>
+  <body>
+
+    <!-- LOADER -->
+    <div class="loader-container flex">
+        <span class="loader"></span>
+    </div>
+    <!-- LOADER -->
+
     <!-- NAVBAR -->
     <section id="navbar"></section>
 
-
     <section class="container">
-        <!-- MAIN PAGE -->
-        <section class="tabcontent" id="main">
-            <!-- HOME -->
-            <section class="main__home">
-                <div class="main__home-title">
-                    <h1 class="heading"><span>PROJECT</span> <br> <span>Lorum</span></h1>
-                    <div>
-                        <button class="next-btn right">&#x2190;</button>
-                        <button class="next-btn left">&#x2192;</button>
-                    </div>
-                    <h3 class="next-text"><span class="current"></span> <span>/</span> <span class="total"></span></h3>
-                </div>
-                <div class="main__home-img">
-                    <img class="slider-img fade" src="assets/home.jpg" alt="home image">
-                    <img class="slider-img fade" src="assets/apartment1.webp" alt="home image">
-                    <button class="more-btn">VIEW PROJECT &#x2192;</button>
-                </div>
-            </section>
-            <!-- HOME -->
-
-            <!-- ABOUT -->
-            <section class="main__about">
-                <div class="main__about-first">
-                    <div class="main__about-img">
-                        <img src="assets/about1.jpg" alt="about 1">
-                        <img src="assets/about2.jpg" alt="about 1">
-                    </div>
-                    <div class="main__about-title">
-                        <h1 class="heading"><span>About</span> <span class="hide">About</span></h1>
-                        <p class="title">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                        <div><button class="more-btn">Read more &#x2192;</button></div>
-                    </div>
-                </div>
-                <div class="main__about-second">
-                    <h1 class="heading"><span>Main Focus / Mission Statement</span><span class="hide"></span></h1>
-                    <div>
-                        <div class="">
-                            <h1 class="big-heading">1</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat.
-                            </p>
-                        </div>
-                        <div>
-                            <h1 class="big-heading">2</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat, magna mauris porttitor tortor, a auctor est felis ut nisl.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- ABOUT -->
+      <!-- MAIN PAGE -->
+      <section class="tabcontent" id="main">
+        <!-- HOME -->
+        <section class="main__home">
+          <div class="main__home-title">
+            <h1 class="heading">
+              <span>PROJECT</span> <br />
+              <span>Lorum</span>
+            </h1>
+            <div>
+              <button class="next-btn right">&#x2190;</button>
+              <button class="next-btn left">&#x2192;</button>
+            </div>
+            <h3 class="next-text">
+              <span class="current"></span> <span>/</span>
+              <span class="total"></span>
+            </h3>
+          </div>
+          <div class="main__home-img">
+            <img
+              class="slider-img fade"
+              src="assets/home.jpg"
+              alt="home image"
+            />
+            <img
+              class="slider-img fade"
+              src="assets/apartment1.webp"
+              alt="home image"
+            />
+            <button class="more-btn">VIEW PROJECT &#x2192;</button>
+          </div>
         </section>
+        <!-- HOME -->
 
-        <!-- GALLERY PAGE -->
-        <section class="tabcontent" id="gallery"></section>
+        <!-- ABOUT -->
+        <section class="main__about">
+          <div class="main__about-first">
+            <div class="main__about-img">
+              <img src="assets/about1.jpg" alt="about 1" />
+              <img src="assets/about2.jpg" alt="about 1" />
+            </div>
+            <div class="main__about-title">
+              <h1 class="heading">
+                <span>About</span> <span class="hide">About</span>
+              </h1>
+              <p class="title">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <div><button class="more-btn">Read more &#x2192;</button></div>
+            </div>
+          </div>
+          <div class="main__about-second">
+            <h1 class="heading">
+              <span>Main Focus / Mission Statement</span
+              ><span class="hide"></span>
+            </h1>
+            <div>
+              <div class="">
+                <h1 class="big-heading">1</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  efficitur, lectus et facilisis placerat.
+                </p>
+              </div>
+              <div>
+                <h1 class="big-heading">2</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  efficitur, lectus et facilisis placerat, magna mauris
+                  porttitor tortor, a auctor est felis ut nisl.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ABOUT -->
 
-        <!-- PROJECT -->
-        <section class="tabcontent" id="project"></section>
+        <!-- PROJECTS -->
+        <section class="main__project">
+          <h1 class="heading">
+            <span>Our Projects</span><span class="hide"></span>
+          </h1>
+          <div class="main__project-img">
+            <img src="assets/project1.png" alt="project one img" />
+            <img src="assets/project1.png" alt="project one img" />
+            <img src="assets/project2.png" alt="project two img" />
+            <img src="assets/project3.png" alt="project three img" />
+            <img src="assets/project4.png" alt="project four img" />
+          </div>
+          <div class="main__project-btn">
+            <button class="view-btn">All projects &#x2192;</button>
+          </div>
+        </section>
+        <!-- PROJECTS -->
 
-        <!-- SERTIFICATE -->
-        <section class="tabcontent" id="sertificate"></section>
+        <!-- CONTACT US -->
+        <section class="main__contact">
+          <h1 class="heading">
+            <span>Contact Us</span><span class="hide"></span>
+          </h1>
+          <div class="main__contact-form">
+            <form>
+              <input name="name" type="text" placeholder="Name" />
+              <input
+                name="phone number"
+                type="number"
+                placeholder="Phone number"
+              />
+              <input name="email" type="email" placeholder="E-mail" />
+              <input
+                name="interested"
+                type="text"
+                placeholder="Interested In"
+              />
+              <textarea
+                placeholder="Message"
+                name="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </form>
+            <img src="assets/contact.jpg" alt="contact img" />
+          </div>
+          <div>
+            <button type="submit" class="view-btn">Send Email &#x2192;</button>
+          </div>
+        </section>
+        <!-- CONTACT US -->
+      </section>
 
-        <!-- CONTACT -->
-        <section class="tabcontent" id="contact"></section>
+      <!-- GALLERY PAGE -->
+      <section class="tabcontent" id="gallery"></section>
+
+      <!-- PROJECT -->
+      <section class="tabcontent" id="project"></section>
+
+      <!-- SERTIFICATE -->
+      <section class="tabcontent" id="sertificate"></section>
+
+      <!-- CONTACT -->
+      <section class="tabcontent" id="contact"></section>
     </section>
 
+    <!-- FOOTER -->
+    <div class="footer__container">
+      <footer class="container main__footer">
+        <div>
+          <a href="/index.html">
+            <i class="bi bi-code-slash"></i>
+          </a>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul class="list__items footer-navs">
+            <li>Main</li>
+            <li>Gallery</li>
+            <li>Projects</li>
+            <li>Certifications</li>
+            <li>Contacts</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacts</h4>
+          <ul class="list__items">
+            <li>
+              <i class="bi bi-geo-alt"></i>1234 Sample Street Austin Texas 78704
+            </li>
+            <li>
+              <i class="bi bi-telephone"></i>
+              512.333.2222
+            </li>
+            <li>
+              <i class="bi bi-envelope"></i>
+              sampleemail@gmail.com
+            </li>
+          </ul>
+        </div>
+        <div class="social__media">
+          <h4>Social Media</h4>
+          <div>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-pinterest"></i>
+          </div>
+        </div>
+      </footer>
+      <hr class="footer__line">
+      <p class="footer__text">© 2021 All Rights Reserved</p>
+    </div>
+    <!-- FOOTER -->
 
     <!-- JS FILE -->
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
