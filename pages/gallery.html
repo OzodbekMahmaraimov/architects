@@ -60,17 +60,32 @@
           />
           <img
             onclick="openModal(this.src)"
-            src="../assets/gallery9.jpg"
+            src="../assets/gallery10.avif"
             alt="gallery"
           />
           <img
             onclick="openModal(this.src)"
-            src="../assets/gallery9.jpg"
+            src="../assets/gallery11.avif"
             alt="gallery"
           />
           <img
             onclick="openModal(this.src)"
-            src="../assets/gallery9.jpg"
+            src="../assets/gallery12.jpg"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery13.webp"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery14.jpg"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery15.jpg"
             alt="gallery"
           />
         </div>
@@ -78,8 +93,9 @@
           <h3 class="next-text">
             <span>01</span><span> / </span><span>05</span>
           </h3>
-          <button class="next-btn">&#x2190;</button>
-          <button class="next-btn">&#x2192;</button>
+          <!-- No changes are needed outside of ensuring that the next and previous buttons have onclick handlers -->
+          <button class="next-btn" onclick="changePage(-1)">&#x2190;</button>
+          <button class="next-btn" onclick="changePage(1)">&#x2192;</button>
         </div>
       </div>
     </div>
