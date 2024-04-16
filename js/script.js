@@ -5,71 +5,11 @@ window.addEventListener("DOMContentLoaded", function () {
       .then((response) => response.text())
       .then((html) => {
         document.getElementById(id).innerHTML = html;
-        initializeTabs();
         navbar();
-        openModal();
       });
   };
-
-  function openModal(imageSrc) {
-    if (imageSrc) {
-      let modal = document.querySelector(".gallery__modal"),
-        modalImg = document.querySelector(".modalImg");
-        console.log(modal + " this is modal");
-
-      modal.classList.remove("hide");
-      modal.classList.add("flex");
-
-      modalImg.src = imageSrc;
-      console.log("Hello Uzbekistan");
-    }
-  }
-
-  getPage("../pages/gallery.html", "gallery");
-  getPage("../pages/project.html", "project");
-  getPage("../pages/sertificate.html", "sertificate");
-  getPage("../pages/contact.html", "contact");
   getPage("../components/navbar.html", "navbar");
-
-  // TABS
-  function initializeTabs() {
-    const tabsParent = document.querySelector(".main__nav-list"),
-      tabs = document.querySelectorAll(".main__nav-item"),
-      tabsContent = document.querySelectorAll(".tabcontent");
-    console.log(tabsParent);
-
-    // TABS
-    function hideTabContent() {
-      tabsContent.forEach((item) => {
-        item.classList.add("hide");
-        item.classList.remove("show", "fade");
-      });
-
-      tabs.forEach((item) => {
-        item.classList.remove("tabheader__item_active");
-      });
-    }
-    function showTabContent(i = 0) {
-      tabsContent[i].classList.add("show", "fade");
-      tabsContent[i].classList.remove("hide");
-      tabs[i].classList.add("tabheader__item_active");
-    }
-
-    hideTabContent();
-    showTabContent();
-
-    tabsParent.addEventListener("click", (event) => {
-      const target = event.target;
-      if (target && target.classList.contains("main__nav-item")) {
-        tabs.forEach((item, idx) => {
-          if (target == item) {
-            hideTabContent();
-            showTabContent(idx);
-          }
-        });
-      }
-    });
-  }
+  getPage("../components/footer.html", "footer")
 
   // NAVBAR
   function navbar() {
@@ -151,3 +91,46 @@ window.addEventListener("DOMContentLoaded", function () {
     loader.classList.add("hide");
   }, 3000);
 });
+
+
+
+
+
+// function initializeTabs() {
+//   const tabsParent = document.querySelector(".main__nav-list"),
+//     tabs = document.querySelectorAll(".main__nav-item"),
+//     tabsContent = document.querySelectorAll(".tabcontent");
+//   console.log(tabsParent);
+
+//   // TABS
+//   function hideTabContent() {
+//     tabsContent.forEach((item) => {
+//       item.classList.add("hide");
+//       item.classList.remove("show", "fade");
+//     });
+
+//     tabs.forEach((item) => {
+//       item.classList.remove("tabheader__item_active");
+//     });
+//   }
+//   function showTabContent(i = 0) {
+//     tabsContent[i].classList.add("show", "fade");
+//     tabsContent[i].classList.remove("hide");
+//     tabs[i].classList.add("tabheader__item_active");
+//   }
+
+//   hideTabContent();
+//   showTabContent();
+
+//   tabsParent.addEventListener("click", (event) => {
+//     const target = event.target;
+//     if (target && target.classList.contains("main__nav-item")) {
+//       tabs.forEach((item, idx) => {
+//         if (target == item) {
+//           hideTabContent();
+//           showTabContent(idx);
+//         }
+//       });
+//     }
+//   });
+// }

@@ -32,7 +32,7 @@ body {
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .overflow-h {
@@ -59,15 +59,15 @@ body {
 /* LOADER */
 
 .loader-container {
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background-color: #263038;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #263038;
 }
 
 .loader {
@@ -183,12 +183,13 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  color: #333333;
 }
 
-.main__nav-item {
+.main__nav-item a {
   cursor: pointer;
   font-weight: 500;
+  text-decoration: none;
+  color: #333333;
 }
 
 .h-0 {
@@ -631,7 +632,7 @@ body {
   }
 
   .main__footer .social__media {
-    margin-top: 2rem; 
+    margin-top: 2rem;
   }
 
   .main__footer .social__media div {
