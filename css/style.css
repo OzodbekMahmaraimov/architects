@@ -482,6 +482,15 @@ body {
   z-index: 60;
 }
 
+@keyframes scale {
+  from {
+    transform: scale(0.8);
+  } 
+  to {
+    transform: scale(1);
+  }
+}
+
 .gallery__modal span {
   position: absolute;
   top: 50px;
@@ -489,6 +498,10 @@ body {
   font-size: 40px;
   cursor: pointer;
   color: white;
+}
+
+.gallery__modal img {
+  animation: scale 0.3s;
 }
 /* RESPONSIVE WEB DESIGN */
 @media (max-width: 1200px) {

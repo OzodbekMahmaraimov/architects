@@ -8,7 +8,6 @@ window.addEventListener("DOMContentLoaded", function () {
         navbar();
       });
   };
-  getPage("../components/navbar.html", "navbar");
   getPage("../components/footer.html", "footer")
 
   // NAVBAR
@@ -90,6 +89,7 @@ window.addEventListener("DOMContentLoaded", function () {
     loader.classList.remove("flex");
     loader.classList.add("hide");
   }, 3000);
+
 });
 
 

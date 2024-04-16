@@ -2,7 +2,98 @@
 <html>
   <head></head>
   <body>
-      <h1>Hello Ozodbek</h1>
+    <section id="navbar"></section>
+
+    <div class="container">
+      <div class="gallery__page">
+        <h1 class="heading"><span>PHOTO</span> <br /><span>GALLERY</span></h1>
+        <div class="gallery__photos">
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery1.jpg"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery2.jpg"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/galler3.jpg"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery4.jpg"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery5.jpg"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery6.jpg"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery7.jpg"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery1.jpg"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery8.jpg"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery9.jpg"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery9.jpg"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery9.jpg"
+            alt="gallery"
+          />
+          <img
+            onclick="openModal(this.src)"
+            src="../assets/gallery9.jpg"
+            alt="gallery"
+          />
+        </div>
+        <div class="gallery__action">
+          <h3 class="next-text">
+            <span>01</span><span> / </span><span>05</span>
+          </h3>
+          <button class="next-btn">&#x2190;</button>
+          <button class="next-btn">&#x2192;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- GALLERY MODAL -->
+    <div class="gallery__modal hide">
+      <span onclick="closeModal()"><i class="bi bi-x-lg"></i></span>
+      <img class="modalImg" src="../assets/gallery2.jpg" alt="modal img" />
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer" class="footer__container"></div>
+
     <script src="../js/gallery.js"></script>
+    <script src="../js/allPage.js"></script>
   </body>
 </html>

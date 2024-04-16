@@ -1,22 +1,27 @@
-window.addEventListener("DOMContentLoaded", () => {
-  const getPage = (url, id, chooseSelect = true) => {
-    fetch(url)
-      .then((response) => response.text())
-      .then((html) => {
-        if (chooseSelect) document.getElementById(id).innerHTML = html;
-        else document.querySelector("head").innerHTML = html;
-      });
-  };
+// GALLERY MODAL
+let modal = document.querySelector(".gallery__modal"),
+  modalImg = document.querySelector(".modalImg"),
+  body = document.querySelector('body');
 
-  getPage("../components/head.html", "head", false);
+const openModal = (imageSrc) => {
+  modal.classList.remove("hide");
+  modal.classList.add("flex");
+  modalImg.src = imageSrc;
+  body.classList.add("overflow-h")
+};
 
-  // let modal = document.querySelector(".gallery__modal"),
-  //   modalImg = document.querySelector(".modalImg");
+const closeModal = () => {
+  modal.classList.remove("flex");
+  modal.classList.add("hide");
+  body.classList.remove("overflow-h")
+};
 
-  // function openModal(imageSrc) {
-  //   modal.classList.remove("hide");
-  //   modal.classList.add("flex");
-  //   modalImg.src = imageSrc;
-  //   console.log("hello Uzbekistam");
-  // }
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeModal();
 });
