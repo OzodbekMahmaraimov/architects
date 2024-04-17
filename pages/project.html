@@ -3,9 +3,9 @@
   <head></head>
   <body>
     <!-- LOADER -->
-    <div class="loader-container flex">
+    <!-- <div class="loader-container flex">
       <span class="loader"></span>
-    </div>
+    </div> -->
     <!-- LOADER -->
 
     <!-- NAVBAR -->
@@ -18,7 +18,7 @@
           <span>Our</span> <br />
           <span>Project</span>
         </h1>
-
+        <!-- CARDS -->
         <section class="project__page-cards">
           <!-- cards -->
           <div class="card">
@@ -67,11 +67,23 @@
             </div>
           </div>
         </section>
+        <!-- CARDS -->
+
+        <!-- pagiantion btns -->
+        <div class="gallery__action">
+          <h3 class="next-text">
+            <span>01</span><span> / </span><span>05</span>
+          </h3>
+          <!-- No changes are needed outside of ensuring that the next and previous buttons have onclick handlers -->
+          <button class="next-btn" onclick="changePage(-1)">&#x2190;</button>
+          <button class="next-btn" onclick="changePage(1)">&#x2192;</button>
+        </div>
+        <!-- pagination btns -->
       </div>
     </div>
 
     <!-- FOOTER -->
-    <!-- <div id="footer" class="footer__container"></div> -->
+    <div id="footer" class="footer__container"></div>
     <!-- /FOOTER -->
     <script src="../js/allPage.js"></script>
   </body>
