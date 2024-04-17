@@ -503,6 +503,44 @@ body {
 .gallery__modal img {
   animation: scale 0.3s;
 }
+
+/* PROJECT PAGE */
+.project__page {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.project__page-cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.project__page-cards .card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #FBFBFB;
+}
+
+.project__page-cards .card  img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.project__page-cards .card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 1.5rem;
+}
+
+.project__card-heading {
+  color: #BDBDBD;
+  font-size: 40px;
+  font-weight: 400;
+}
 /* RESPONSIVE WEB DESIGN */
 @media (max-width: 1200px) {
   /* HOME */

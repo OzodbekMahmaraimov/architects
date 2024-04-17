@@ -9,6 +9,13 @@ window.addEventListener("DOMContentLoaded", () => {
   };
 
   getPage("../components/head.html", "head", false);
-  getPage("../components/footer.html", 'footer')
-  getPage("../components/navbar.html", "navbar")
+  getPage("../components/footer.html", "footer");
+  getPage("../components/navbar.html", "navbar");
 });
+
+const loader = document.querySelector(".loader-container");
+
+setTimeout(() => {
+  loader.classList.remove("flex");
+  loader.classList.add("hide");
+}, 3000);
