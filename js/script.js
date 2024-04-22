@@ -1,5 +1,6 @@
 setTimeout(() => {
   document.querySelector(".view").classList.add("flex")
+  document.querySelector(".view").classList.remove("hide")
 }, 1000)
 
 window.addEventListener("DOMContentLoaded", function () {
