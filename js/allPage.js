@@ -53,13 +53,15 @@ function openToast() {
   }, 2000)
 }
 
-// function loading() {
-//   const loader = document.querySelector(".loader-container");
+function loading() {
+  const loader = document.querySelector(".loader-container");
 
-//   setTimeout(() => {
-//     loader.classList.remove("flex");
-//     loader.classList.add("hide");
-//   }, 2000);
-// }
+  setTimeout(() => {
+    loader.classList.remove("flex");
+    loader.classList.add("hide");
+  }, 2000);
+}
+
+loading()
 
 // loading()
