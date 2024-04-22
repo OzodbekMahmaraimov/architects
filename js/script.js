@@ -1,3 +1,7 @@
+setTimeout(() => {
+  document.querySelector(".view").classList.add("flex")
+}, 1000)
+
 window.addEventListener("DOMContentLoaded", function () {
   // PAGES
   const getPage = (url, id) => {

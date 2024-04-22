@@ -18,185 +18,190 @@
   <body>
     <!-- LOADER -->
     <div class="loader-container flex">
-        <span class="loader"></span>
+      <span class="loader"></span>
     </div>
     <!-- LOADER -->
 
-    <!-- TOAST -->
-    <div class="toast hide">
-      <i class="bi bi-check-circle"></i>
-      <h2>Success</h2>
-    </div>
-    <!-- /TOAST -->
+    <div class="view hide">
+      <!-- TOAST -->
+      <div class="toast hide">
+        <i class="bi bi-check-circle"></i>
+        <h2>Success</h2>
+      </div>
+      <!-- /TOAST -->
 
-    <!-- NAVBAR -->
-    <section class="navbar">
-      <header class="main__header container">
-        <div class="main__logo">
-          <a href="/index.html">
-            <i class="bi bi-code-slash"></i>
-          </a>
-        </div>
+      <!-- NAVBAR -->
+      <section class="navbar">
+        <header class="main__header container">
+          <div class="main__logo">
+            <a href="/index.html">
+              <i class="bi bi-code-slash"></i>
+            </a>
+          </div>
 
-        <nav class="main__nav h-0">
-          <ul class="main__nav-list">
-            <li class="main__nav-item">
-              <a class="main__nav-href" href="index.html">Main</a>
-            </li>
-            <li class="main__nav-item">
-              <a class="main__nav-href" href="pages/gallery.html">Gallery</a>
-            </li>
-            <li class="main__nav-item">
-              <a class="main__nav-href" href="pages/project.html">Projects</a>
-            </li>
-            <li class="main__nav-item">
-              <a class="main__nav-href" href="pages/contact.html">contact</a>
-            </li>
-          </ul>
-        </nav>
-        <i class="bi bi-list toggle"></i>
-      </header>
-    </section>
-    <!-- NAVBAR -->
-
-    <section class="container">
-      <!-- MAIN PAGE -->
-      <section id="main">
-        <!-- HOME -->
-        <section class="main__home">
-          <div class="main__home-title">
-            <h1 class="heading">
-              <span>PROJECT</span> <br />
-              <span>Lorum</span>
-            </h1>
-            <div>
-              <button class="next-btn right">&#x2190;</button>
-              <button class="next-btn left">&#x2192;</button>
-            </div>
-            <h3 class="next-text">
-              <span class="current"></span> <span>/</span>
-              <span class="total"></span>
-            </h3>
-          </div>
-          <div class="main__home-img">
-            <img
-              class="slider-img fade"
-              src="assets/home.jpg"
-              alt="home image"
-            />
-            <img
-              class="slider-img fade"
-              src="assets/apartment1.webp"
-              alt="home image"
-            />
-            <button class="more-btn">VIEW PROJECT &#x2192;</button>
-          </div>
-        </section>
-        <!-- HOME -->
-
-        <!-- ABOUT -->
-        <section class="main__about">
-          <div class="main__about-first">
-            <div class="main__about-img">
-              <img src="assets/about1.jpg" alt="about 1" />
-              <img src="assets/about2.jpg" alt="about 1" />
-            </div>
-            <div class="main__about-title">
-              <h1 class="heading">
-                <span>About</span> <span class="hide">About</span>
-              </h1>
-              <p class="title">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
-              </p>
-              <div><button class="more-btn">Read more &#x2192;</button></div>
-            </div>
-          </div>
-          <div class="main__about-second">
-            <h1 class="heading">
-              <span>Main Focus / Mission Statement</span
-              ><span class="hide"></span>
-            </h1>
-            <div>
-              <div class="">
-                <h1 class="big-heading">1</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  efficitur, lectus et facilisis placerat.
-                </p>
-              </div>
-              <div>
-                <h1 class="big-heading">2</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  efficitur, lectus et facilisis placerat, magna mauris
-                  porttitor tortor, a auctor est felis ut nisl.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- ABOUT -->
-
-        <!-- PROJECTS -->
-        <section class="main__project">
-          <h1 class="heading">
-            <span>Our Projects</span><span class="hide"></span>
-          </h1>
-          <div class="main__project-img">
-            <img src="assets/project1.png" alt="project one img" />
-            <img src="assets/project1.png" alt="project one img" />
-            <img src="assets/project2.png" alt="project two img" />
-            <img src="assets/project3.png" alt="project three img" />
-            <img src="assets/project4.png" alt="project four img" />
-          </div>
-          <div class="main__project-btn">
-            <a href="pages/project.html" class="view-btn">All projects &#x2192;</a>
-          </div>
-        </section>
-        <!-- PROJECTS -->
-
-        <!-- CONTACT US -->
-        <section class="main__contact">
-          <h1 class="heading">
-            <span>Contact Us</span><span class="hide"></span>
-          </h1>
-          <div class="main__contact-form">
-            <form>
-              <input name="name" type="text" placeholder="Name" />
-              <input
-                name="phone number"
-                type="number"
-                placeholder="Phone number"
-              />
-              <input name="email" type="email" placeholder="E-mail" />
-              <input
-                name="interested"
-                type="text"
-                placeholder="Interested In"
-              />
-              <textarea
-                placeholder="Message"
-                name="message"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </form>
-            <img src="assets/contact.jpg" alt="contact img" />
-          </div>
-          <div>
-            <button onclick="openToast()" type="submit" class="view-btn">
-              Send Email &#x2192;
-            </button>
-          </div>
-        </section>
-        <!-- CONTACT US -->
+          <nav class="main__nav h-0">
+            <ul class="main__nav-list">
+              <li class="main__nav-item">
+                <a class="main__nav-href" href="index.html">Main</a>
+              </li>
+              <li class="main__nav-item">
+                <a class="main__nav-href" href="pages/gallery.html">Gallery</a>
+              </li>
+              <li class="main__nav-item">
+                <a class="main__nav-href" href="pages/project.html">Projects</a>
+              </li>
+              <li class="main__nav-item">
+                <a class="main__nav-href" href="pages/contact.html">contact</a>
+              </li>
+            </ul>
+          </nav>
+          <i class="bi bi-list toggle"></i>
+        </header>
       </section>
-    </section>
+      <!-- NAVBAR -->
+
+      <section class="container">
+        <!-- MAIN PAGE -->
+        <section id="main">
+          <!-- HOME -->
+          <section class="main__home">
+            <div class="main__home-title">
+              <h1 class="heading">
+                <span>PROJECT</span> <br />
+                <span>Lorum</span>
+              </h1>
+              <div>
+                <button class="next-btn right">&#x2190;</button>
+                <button class="next-btn left">&#x2192;</button>
+              </div>
+              <h3 class="next-text">
+                <span class="current"></span> <span>/</span>
+                <span class="total"></span>
+              </h3>
+            </div>
+            <div class="main__home-img">
+              <img
+                class="slider-img fade"
+                src="assets/home.jpg"
+                alt="home image"
+              />
+              <img
+                class="slider-img fade"
+                src="assets/apartment1.webp"
+                alt="home image"
+              />
+              <button class="more-btn">VIEW PROJECT &#x2192;</button>
+            </div>
+          </section>
+          <!-- HOME -->
+
+          <!-- ABOUT -->
+          <section class="main__about">
+            <div class="main__about-first">
+              <div class="main__about-img">
+                <img src="assets/about1.jpg" alt="about 1" />
+                <img src="assets/about2.jpg" alt="about 1" />
+              </div>
+              <div class="main__about-title">
+                <h1 class="heading">
+                  <span>About</span> <span class="hide">About</span>
+                </h1>
+                <p class="title">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged.
+                </p>
+                <div><button class="more-btn">Read more &#x2192;</button></div>
+              </div>
+            </div>
+            <div class="main__about-second">
+              <h1 class="heading">
+                <span>Main Focus / Mission Statement</span
+                ><span class="hide"></span>
+              </h1>
+              <div>
+                <div class="">
+                  <h1 class="big-heading">1</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    efficitur, lectus et facilisis placerat.
+                  </p>
+                </div>
+                <div>
+                  <h1 class="big-heading">2</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    efficitur, lectus et facilisis placerat, magna mauris
+                    porttitor tortor, a auctor est felis ut nisl.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ABOUT -->
+
+          <!-- PROJECTS -->
+          <section class="main__project">
+            <h1 class="heading">
+              <span>Our Projects</span><span class="hide"></span>
+            </h1>
+            <div class="main__project-img">
+              <img src="assets/project1.png" alt="project one img" />
+              <img src="assets/project1.png" alt="project one img" />
+              <img src="assets/project2.png" alt="project two img" />
+              <img src="assets/project3.png" alt="project three img" />
+              <img src="assets/project4.png" alt="project four img" />
+            </div>
+            <div class="main__project-btn">
+              <a href="pages/project.html" class="view-btn"
+                >All projects &#x2192;</a
+              >
+            </div>
+          </section>
+          <!-- PROJECTS -->
+
+          <!-- CONTACT US -->
+          <section class="main__contact">
+            <h1 class="heading">
+              <span>Contact Us</span><span class="hide"></span>
+            </h1>
+            <div class="main__contact-form">
+              <form>
+                <input name="name" type="text" placeholder="Name" />
+                <input
+                  name="phone number"
+                  type="number"
+                  placeholder="Phone number"
+                />
+                <input name="email" type="email" placeholder="E-mail" />
+                <input
+                  name="interested"
+                  type="text"
+                  placeholder="Interested In"
+                />
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </form>
+              <img src="assets/contact.jpg" alt="contact img" />
+            </div>
+            <div>
+              <button onclick="openToast()" type="submit" class="view-btn">
+                Send Email &#x2192;
+              </button>
+            </div>
+          </section>
+          <!-- CONTACT US -->
+        </section>
+      </section>
+    </div>
 
     <!-- FOOTER -->
     <div id="footer" class="footer__container"></div>

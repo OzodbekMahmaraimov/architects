@@ -63,5 +63,3 @@ function loading() {
 }
 
 loading()
-
-// loading()
