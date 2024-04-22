@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", function () {
         navbar();
       });
   };
-  getPage("../components/footer.html", "footer")
+  getPage("../components/footer.html", "footer");
 
   // SLIDE
   const slides = document.querySelectorAll(".slider-img"),
@@ -59,12 +59,7 @@ window.addEventListener("DOMContentLoaded", function () {
       plusSlides(-1);
     });
   }
-
 });
-
-
-
-
 
 // function initializeTabs() {
 //   const tabsParent = document.querySelector(".main__nav-list"),

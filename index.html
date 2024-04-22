@@ -17,13 +17,20 @@
 
   <body>
     <!-- LOADER -->
-    <div class="loader-container flex">
+    <!-- <div class="loader-container flex">
         <span class="loader"></span>
-    </div>
+    </div> -->
     <!-- LOADER -->
 
+    <!-- TOAST -->
+    <div class="toast hide">
+      <i class="bi bi-check-circle"></i>
+      <h2>Success</h2>
+    </div>
+    <!-- /TOAST -->
+
     <!-- NAVBAR -->
-    <section id="navbar">
+    <section class="navbar">
       <header class="main__header container">
         <div class="main__logo">
           <a href="/index.html">
@@ -41,11 +48,6 @@
             </li>
             <li class="main__nav-item">
               <a class="main__nav-href" href="pages/project.html">Projects</a>
-            </li>
-            <li class="main__nav-item">
-              <a class="main__nav-href" href="pages/sertificate.html"
-                >CERTIFICATIONS</a
-              >
             </li>
             <li class="main__nav-item">
               <a class="main__nav-href" href="pages/contact.html">contact</a>
@@ -153,7 +155,7 @@
             <img src="assets/project4.png" alt="project four img" />
           </div>
           <div class="main__project-btn">
-            <button class="view-btn">All projects &#x2192;</button>
+            <a href="pages/project.html" class="view-btn">All projects &#x2192;</a>
           </div>
         </section>
         <!-- PROJECTS -->
@@ -187,7 +189,9 @@
             <img src="assets/contact.jpg" alt="contact img" />
           </div>
           <div>
-            <button type="submit" class="view-btn">Send Email &#x2192;</button>
+            <button onclick="openToast()" type="submit" class="view-btn">
+              Send Email &#x2192;
+            </button>
           </div>
         </section>
         <!-- CONTACT US -->
