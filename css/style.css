@@ -24,7 +24,7 @@ body {
 /* CORE STYLES */
 
 .hide {
-  display: none !important;
+  display: none;
 }
 
 .show {
